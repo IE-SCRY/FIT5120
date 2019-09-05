@@ -1,0 +1,43 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card" style="width:100%;">
+            <a href="http://legal-genie.tk/Home/" class="w3-bar-item w3-button"> <img style="width:100%;height:40px" src="~/Image/logo.png"/></a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="http://legal-genie.tk/Home/Knowledgebase" class="w3-bar-item w3-button">Knowledgebase</a>
+                <a href="http://legal-genie.tk/Home/RentComparison" class="w3-bar-item w3-button">Rent Comparison</a>
+                <a href="http://legal-genie.tk/Home/LegalGames" class="w3-bar-item w3-button">Legal Games</a>
+                <a href="http://legal-genie.tk/Home/CompensationForDamages" class="w3-bar-item w3-button">Compensation for Damages</a>
+                <a href="http://legal-genie.tk/Home/Questionaire" class="w3-bar-item w3-button">Questionaire</a>
+            </div>
+        </div>
+    </div>
+    <!-- Image button  -->
+    <div style="margin-top:100px">
+        <a href="https://localhost:44397/Home"> <img src="~/Image/imageLink.PNG" style="width:50%;margin-left:25%"></a>
+    </div>
+
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
