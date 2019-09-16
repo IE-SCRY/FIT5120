@@ -1,0 +1,293 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet'>
+    <link href="~/Content/nav_bar.css" rel="stylesheet" />
+    <link href="~/Content/Homepage.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <header>
+        <div>
+            <img src="~/Resource/TenancyTrip.png" alt="logo" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                    <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                    <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                    <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                    <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- background video -->
+    <div id="box">
+        <video autoplay loop style="width:100%;height:auto">
+            <source src="https://video.wixstatic.com/video/11062b_9f421918574743b48202cb0dacbd77d4/1080p/mp4/file.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        window.onload = function () {
+
+            function getScrollTop() {
+                if (typeof window.pageYOffset !== 'undefined') {
+                    // Most browsers
+                    return window.pageYOffset;
+                }
+
+                var d = document.documentElement;
+                if (d.clientHeight) {
+                    // IE in standards mode
+                    return d.scrollTop;
+                }
+
+                // IE in quirks mode
+                return document.body.scrollTop;
+            }
+
+            window.onscroll = function () {
+                var box = document.getElementById('box'),
+                    scroll = getScrollTop();
+                if (scroll >= 3150) {
+                    box.style.bottom = "0px";
+                }
+                else {
+                    box.style.top = (scroll) + "px";
+                }
+            };
+
+        };
+    </script>
+
+
+
+
+
+    <!-- video -->
+    <video autoplay muted loop style="width: 100%;  height: auto;margin-top:0px">
+        <source src="~/Resource/HomepageVideo.mp4" type="video/mp4" />
+    </video>
+
+
+
+    <!-- 3d carousel -->
+
+    <div class="carousel" style="margin-top:50px;width:80%;margin-left:10%">
+
+        <div class="carousel-item" style="width:60%;height:80%"><img style="width:100%;height:100%" src="~/Resource/1st Stat.png"></div>
+        <div class="carousel-item" style="width:60%;height:80%"><img style="width:100%;height:100%" src="~/Resource/2nd Stat.png"></div>
+        <div class="carousel-item" style="width:60%;height:80%"><img style="width:100%;height:100%" src="~/Resource/3rd Stat.png"></div>
+        <div class="carousel-item" style="width:60%;height:80%"><img style="width:100%;height:100%" src="~/Resource/4th Stat.png"></div>
+        <div class="carousel-item" style="width:60%;height:80%"><img style="width:100%;height:100%" src="~/Resource/RentComparsion.jpg"></div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <!-- discription1 -->
+    <div style="width:100%;margin-top:2px">
+        <div style="display:inline-block;width:40%;height:400px;text-align:center;margin-left:5%;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <div style="margin-top:10%">
+                <ht1>
+                    <b>The Meaning and Mission of Existence</b>
+                </ht1>
+            </div>
+            <div style="margin-top:15%;width:80%;margin-left:10%">
+                <t1>
+                    "Each International Student has the same right and interests in house renting market."
+                </t1>
+            </div>
+            <div style="margin-top:20%">
+                <button id="myBtn" href="http://13.210.50.154/Home/AboutUs">View More</button>
+            </div>
+        </div>
+        <div style="display:inline-block;width:50%;height:400px;position:absolute;right:5%;text-align:center;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <img style="width:80%;height:320px;margin-top:40px;" src="~/Resource/Description1.png" />
+        </div>
+    </div>
+
+    <!-- discription2 -->
+    <div style="width:100%;margin-top:2px">
+        <div style="display:inline-block;width:40%;height:400px;text-align:center;margin-left:5%;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <img style="width:80%;height:360px;margin-top:20px;" src="~/Resource/Discription2.PNG" />
+        </div>
+        <div style="display:inline-block;width:50%;height:400px;position:absolute;right:5%;text-align:center;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <div style="margin-top:10%">
+                <ht1>
+                    <b>
+                        Do you Really Understand your Situation?<br>
+                        or<br>
+                        You Know Nothing about Your Deserved rights and interests?
+                    </b>
+                </ht1>
+            </div>
+            <div style="margin-top:10%;width:80%;margin-left:10%">
+                <t1>
+                    "Emmmmmm"
+                </t1>
+            </div>
+            <div style="margin-top:10%">
+                <button id="myBtn" href="http://13.210.50.154/Home/Knowledgebase">View More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- discription3 -->
+    <div style="width:100%;margin-top:2px">
+        <div style="display:inline-block;width:40%;height:400px;text-align:center;margin-left:5%;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <div style="margin-top:15%">
+                <ht1>
+                    <b>
+                        Maybe you Already Know your Rental Issues,<br>
+                        But do You Know How to Solve it?
+                    </b>
+                </ht1>
+            </div>
+            <div style="margin-top:10%;width:90%;margin-left:5%">
+                <t1>
+                    "You don't want to be stuck with the rental problem anymore"
+                    <br>
+                    "Dark day in your study life"
+                    <br>
+                    "Need a smart and time-saving way"
+                </t1>
+            </div>
+            <div style="margin-top:10%">
+                <button id="myBtn" href="http://13.210.50.154/Home/Questionnaire">View More</button>
+            </div>
+        </div>
+        <div style="display:inline-block;width:50%;height:400px;position:absolute;right:5%;text-align:center;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <img style="width:80%;height:320px;margin-top:40px;" src="~/Resource/Discription3.PNG" />
+        </div>
+    </div>
+
+    <!-- discription4 -->
+    <div style="width:100%;margin-top:2px">
+        <div style="display:inline-block;width:40%;height:400px;text-align:center;margin-left:5%;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <img style="width:80%;height:360px;margin-top:20px;" src="~/Resource/Discription4.PNG" />
+        </div>
+        <div style="display:inline-block;width:50%;height:400px;position:absolute;right:5%;text-align:center;box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);">
+            <div style="margin-top:10%">
+                <ht1>
+                    <b>
+                        Do you want to know the Medium Price of Your House Rent?
+                    </b>
+                </ht1>
+            </div>
+            <div style="margin-top:10%;width:80%;margin-left:10%">
+                <t1>
+                    "The guide price for certain region"
+                    <br>
+                    "Far away from unreasonable house rent"
+                </t1>
+            </div>
+            <div style="margin-top:15%">
+                <button id="myBtn" href="http://13.210.50.154/Home/RentComparison">View More</button>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  hover button -->
+
+    <div style="margin-top:100px">
+
+        <div class="image-box">
+            <img style="width:75%;height:50%;margin-left:20%;margin-right:5%" src="~/Resource/Knowledgebase.png" />
+            <div style="background-color:white;position:absolute;top:45%;width:50%;height:20%;text-align:center">
+                <div style="margin-top:15%">
+                    <ht1 style="color:forestgreen"><i><b>Knowledge Base</b></i></ht1>
+                </div>
+            </div>
+            <div style="margin-top:20%">
+                <t1><i>Five top common rental issues<br> oversea students encountered</i></t1>
+            </div>
+            <div style="position:absolute;bottom:5%;right:10%;background-color:darkturquoise;width:30%;height:10%;text-align:center">
+                <div style="margin-top:15%">
+                    <a style="text-decoration:none;color:white" href="http://13.210.50.154/Home/Knowledgebase">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <img style="width:75%;height:50%;margin-left:20%;margin-right:5%" src="~/Resource/Questionnaire.png" />
+            <div style="background-color:white;position:absolute;top:45%;width:50%;height:20%;text-align:center">
+                <div style="margin-top:15%">
+                    <ht1 style="color:forestgreen"><i><b>Questionnaire</b></i></ht1>
+                </div>
+            </div>
+            <div style="margin-top:20%">
+                <t1><i>Some simple and short questions about your<br> rental problems, let us know you better</i></t1>
+            </div>
+            <div style="position:absolute;bottom:5%;right:10%;background-color:darkturquoise;width:30%;height:10%;text-align:center">
+                <div style="margin-top:15%">
+                    <a style="text-decoration:none;color:white" href="http://13.210.50.154/Home/Questionnaire">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="image-box">
+            <img style="width:75%;height:50%;margin-left:20%;margin-right:5%" src="~/Resource/RentComparsion.jpg" />
+            <div style="background-color:white;position:absolute;top:45%;width:50%;height:20%;text-align:center">
+                <div style="margin-top:15%">
+                    <ht1 style="color:forestgreen"><i><b>Rent Comparsion</b></i></ht1>
+                </div>
+            </div>
+            <div style="margin-top:20%">
+                <t1><i>Assisting you find the median<br> price in each region</i></t1>
+            </div>
+            <div style="position:absolute;bottom:5%;right:10%;background-color:darkturquoise;width:30%;height:10%;text-align:center">
+                <div style="margin-top:15%">
+                    <a style="color:white" href="http://13.210.50.154/Home/RentComparison">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <div style="margin-top:100px;width:80%;text-align:left;margin-left:10%">
+        <ht1><i><b>Contact:</b></i></ht1>
+        <div style="margin-top:30px;width:80%;text-align:left;margin-left:10%">
+            <t1> Address: Unit 25 Suite 3, Bentleigh, 3206, Melbourne</t1>
+        </div>
+        <div style="margin-top:30px;width:80%;text-align:left;margin-left:10%">
+            <t1> Email:   TenanacyTrip@gmail.com</t1>
+        </div>
+        <div style="margin-top:30px;width:80%;text-align:left;margin-left:10%">
+            <t1> Phone:   +61 0450180930</t1>
+        </div>
+    </div>
+        -->
+
+
+    <div style="margin-top:50px">
+        <nav>
+            <ul>
+                <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+</html>

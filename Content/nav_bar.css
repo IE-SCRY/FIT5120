@@ -1,0 +1,41 @@
+﻿header {
+    background-color:white;height:92px;
+}
+
+
+
+.logo {
+    margin-left: 50px;
+    float: left;
+    width: auto;
+    height: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+    nav ul {
+        list-style: none;
+
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 50px;
+        padding-top: 30px;
+    }
+
+
+    nav a {
+        font-family: 'Reenie Beanie';
+        font-style: italic;
+        font-size: 25px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color:dimgray;
+    }
+
+        nav a:hover {
+            color:cornflowerblue;
+        }

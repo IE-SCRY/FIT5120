@@ -1,0 +1,72 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet'>
+    <link href="~/Content/nav_bar.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+    <link href="~/Content/Knowledgebase.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <header style="position:absolute;top:0;left:0;width:100%;height:auto">
+        <div class="nav_bar" style="position:absolute;top:0;left:0;width:100%;height:auto">
+            <img src="~/Resource/TenancyTrip.png" alt="logo" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                    <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                    <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                    <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                    <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script>
+            $(function () {
+                $('a').each(function () {
+                    if ($(this).prop('href') == window.location.href) {
+                        $(this).addClass('current');
+                    }
+                });
+            });
+        </script>
+    </header>
+
+    <div style="background-image:url(../../Resource/questionnaire1.png);background-size:cover;width:100%;margin-top:93px;height:600px;text-align:center">
+        <div style="background-color:beige;width:40%;left:30%;height:400px;top:20%;position:absolute">
+            <p style="font-family:Courgette;font-size: 60px;color:burlywood"><b>Questionnaire</b></p>
+            <p style="font-family: 'Zilla Slab';font-size: 30px;color:burlywood">Know you better and<br> customised your solution</p>
+            <a href="#knowledge" style="font-family:Courgette;font-size: 30px;color:burlywood;"><i>Begin Now</i></a>
+        </div>
+    </div>
+
+    <div id="knowledge" style="background-image:url(../../Resource/questionnaire2.png);background-size:cover;width:100%;margin-top:0px;height:400px">
+       
+    </div>
+
+    <div style="margin-top:20px">
+        <nav>
+            <ul>
+                <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
