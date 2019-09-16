@@ -1,0 +1,61 @@
+﻿@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet'>
+    <link href="~/Content/nav_bar.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <header style="position:absolute;top:0;left:0;width:100%;height:auto">
+        <div class="nav_bar" style="position:absolute;top:0;left:0;width:100%;height:auto">
+            <img src="~/Resource/TenancyTrip.png" alt="logo" class="logo" />
+            <nav>
+                <ul>
+                    <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                    <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                    <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                    <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                    <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+                </ul>
+            </nav>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script>
+            $(function () {
+                $('a').each(function () {
+                    if ($(this).prop('href') == window.location.href) {
+                        $(this).addClass('current');
+                    }
+                });
+            });
+        </script>
+    </header>
+
+    <div style="margin-top:300px;text-align:center;font-size:60px">
+        Coming Soon
+    </div>
+
+    <div style="margin-top:200px">
+        <nav>
+            <ul>
+                <li><a href="http://13.210.50.154/Home/Index">Home</a></li>
+                <li><a href="http://13.210.50.154/Home/AboutUs">About Us</a></li>
+                <li><a href="http://13.210.50.154/Home/Knowledgebase">Knowledgebase</a></li>
+                <li><a href="http://13.210.50.154/Home/Questionnaire">Questionnaire</a></li>
+                <li><a href="http://13.210.50.154/Home/RentComparison">Rent Comparison</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
