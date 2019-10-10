@@ -1,0 +1,1007 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en" style="    scroll-behavior: smooth;">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Facing Issues ? Solve now</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Reenie Beanie' rel='stylesheet'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' />
+    <link href='https://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Zilla Slab' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Handlee' rel='stylesheet'>
+    <!-- Custom styles for this template -->
+    <link href="~/css/one-page-wonder.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link href="~/Content/questionnaire.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" />
+    <link hhref="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" />
+    <link href="~/Content/homeindex.css" rel="stylesheet" />
+    <link href="~/favicon1.ico" rel="icon" type="image/x-icon">
+    <script>
+
+        function dodajAktywne(elem) {
+            var a = document.getElementsByTagName('div');
+            // loop through all 'a' elements
+            for (i = 0; i < a.length; i++) {
+                // Remove the class 'active' if it exists
+                a[i].classList.remove('active_elem')
+            }
+            // add 'active' classs to the element that was click
+            elem.classList.add('active_elem');
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript" color="0,255,255" opacity='1.0' zIndex="-1" count="99"
+            src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="http://tenancytrip.tk/" style="text-transform: capitalize;font-family: inherit;font-size:25px;letter-spacing: 5px;font-weight: 250;">Tenancy Trip</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://tenancytrip.tk/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://tenancytrip.tk/Home/Check">Check It</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://tenancytrip.tk/Home/Information">Know It</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://tenancytrip.tk/Home/Questionnaire">Facing It?</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead text-center text-white" style="height:100%">
+        <div class="masthead-content" style="height:100%">
+            <div class="container">
+                <h1 class="masthead-heading mb-0" id="facing_head">Are you facing issues ?</h1>
+                <h2 class="masthead-subheading mb-0" id="facing_head">
+                    This is a good place for you to find help!
+                </h2>
+                <h2 class="masthead-subheading mb-0" id="facing_head" >
+                    Select the issues you are suffering from to gain an insight on how to tackle those problems and have a hassle-free tenancy in Victoria.
+                </h2>
+
+                <a href="#Questionnaire" id="infobtn" class="btn btn-primary btn-xl rounded-pill mt-5">Learn More</a>
+                <p class="masthead-subheading mb-0" id="facing_head" style="font-size:20px;margin-top:20px;width:80%;margin-left:10%">
+
+                    <a style="color:white;font-weight:300" href="http://tenancytrip.tk/Home">Home</a> > Facing It ?
+                </p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div id="Questionnaire" style="height:100px">
+    </div>
+
+
+    <!--questionnaire-->
+
+
+    <section>
+        <section class="cards">
+            <article class="card card--1">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire" onclick="display(1)" class="card_link">
+                    <div class="card__img--hover"></div>
+                
+                <div class="card__info ">
+                    <span class="card__category"> Rent in<br> Advance</span>
+                    <h3 class="card__title"></h3>
+
+                </div>
+                </a>
+            </article>
+
+            <article class="card card--2">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire" onclick="display(2)" class="card_link">
+                    <div class="card__img--hover"></div>
+                
+                <div class="card__info">
+                    <span class="card__category">Holding<br> Deposit</span>
+                    <h3 class="card__title"></h3>
+
+                </div>
+                </a>
+            </article>
+
+            <article class="card card--3">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire" onclick="display(3)" class="card_link">
+                    <div class="card__img--hover"></div>
+                
+                <div class="card__info">
+                    <span class="card__category">Rental<br> Agreement</span>
+                    <h3 class="card__title"></h3>
+
+                </div>
+                </a>
+            </article>
+        </section>
+        <div class="demo" style="width:80%;margin-left:10%">
+            <button class="accordion"> I am not sure if the landlord is asking the right amount to pay in advanced.</button>
+            <div class="panel">
+                <p>
+                    If you pay rent weekly, your landlord or agent cannot ask for more than 14 days’ rent at the beginning of a tenancy. In any other case, provided the rent is
+                    $350 a week or less, the landlord or agent cannot ask for more than one month’s rent in advance.
+                </p>
+            </div>
+            <button class="accordion">  I have paid rent in advance money, but no payment copy is provided by landlord. </button>
+            <div class="panel">
+                <p>
+                    . You must have a proper payment copy or statement from landlord. If landlord does not provide any rent in advance payment copy or statement or does
+                    mention it on rental agreement, then ask about it to the landlord. If you still do not get proper initiative from landlord, then ask for help from “Tenants Victoria”
+                    who provides information, advice and advocacy services for Victorian Tenants. Call 03 9416 2577 or visit <a href="https://www.tuv.org.au/">www.tuv.org.au</a>
+                </p>
+            </div>
+            <button class="accordion"> Landlord is not agreeing to refund advance payment at the end tenancy agreement. </button>
+            <div class="panel">
+                <button class="accordion1">. I have some repairs or expenses due to pay at the end of the lease.  </button>
+                <div class="panel1">
+                    <p>
+                        Your landlord or agent may make a claim on part or all of the rent in advance money for:<br>
+                        • damage caused by you or your visitors.<br>
+                        • cleaning expenses.<br>
+                        • abandonment of the premises.<br>
+                        • you leaving your landlord to pay bills you should have paid.<br>
+                        • loss of the landlord’s goods.<br>
+                        • unpaid rent.<br>
+                        The landlord must accept fair wear and tear. If you think that landlord is claiming the right amount of money and forcing you to agree with his/her claim; you can call 1300 55 81 81 (Victoria Consumer Affairs Australia) ask for help.
+                    </p>
+                </div>
+                <button class="accordion1"> I don’t have any repairs or expenses due to pay at the end of lease. </button>
+                <div class="panel1">
+                    <p>
+                        Check if you have any issue (given below) that landlord or agent may claim on part or all of the rent in advance money.<br>
+                        Your landlord or agent may make a claim on part or all of the rent in advance money for:<br>
+                        • damage caused by you or your visitors.<br>
+                        • cleaning expenses.<br>
+                        • abandonment of the premises.<br>
+                        • you leaving your landlord to pay bills you should have paid.<br>
+                        • loss of the landlord’s goods.<br>
+                        • unpaid rent.<br>
+                        The landlord must accept fair wear and tear. If you think that landlord is claiming the right amount of money and forcing you to agree with his/her claim; you can call 1300 55 81 81 (Victoria Consumer Affairs Australia) ask for help.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo" style="width:80%;margin-left:10%; ">
+            <button class="accordion"> I am confused to pay holding deposit to the landlord as I don’t know its right or wrong by tenancy rights.</button>
+            <div class="panel">
+                <p>A landlord or agent can ask you for a holding deposit. This must be refunded when the tenancy agreement is signed within 14 days.</p>
+            </div>
+            <button class="accordion"> I have already paid holding deposit money, but landlord did not make a tenancy agreement yet.</button>
+            <div class="panel">
+                <p>If no tenancy agreement is made within 14 days, the money must be refunded by the next business day.</p>
+            </div>
+            <button class="accordion">I am facing with different issue rather than above option.</button>
+            <div class="panel">
+                <p>It is suggested to ask for help form Tenants Victoria who provides information, advice and advocacy services for Victorian tenants. Call 03 9416 2577 or visit <a href="https://www.tuv.org.au/">www.tuv.org.au</a></p>
+            </div>
+        </div>
+
+        <div class="demo" style="width:80%;margin-left:10%; ">
+            <button class="accordion">I am not sure what are most important check list that I should care before sign in the lease agreement.</button>
+            <div class="panel">
+                <p>
+                    The given check list holds the most key important points that should mention on lease agreement but not limited to. Click on the list point if you have confusion on any specific list point.<br>
+                    √ Landlord/Agency full name and address. Expandable (The name of the landlord/agency and current address that you can find them)<br>
+                    √ Your Full name and address Expandable (Your Full as per your identification card and your current address)<br>
+                    √ The length and type of tenancy. Expandable (The type of the lease agreement should me mention either Long term (More than 5 years) or Long Term (Less than 5 years).  Besides that, the commencing
+                    date of lease sign, starting and ending date of tenancy need to be clearly mentioned on the agreement.)<br>
+                    √ The amount of bond required. Expandable (The bond money you are asked to pay)<br>
+                    √ Conditions and rules. Expandable (The terms and conditions that should be done by you and Landlord/Agency during tenancy period)<br>
+                    √ Any special terms agreed by you and Landlord/Agency. Expandable (If any special terms and condition set up by Landlord/Agency)<br>
+                    √ An attachment of accommodation conditional report with lease agreement Expandable (The details condition report of the accommodation that explain current state of the house/apartment/room etc.)<br>
+                    √ The agreement signs of you and Landlord/Agency. Expandable (Full name and sign of you and landlord or agency)<br>
+
+                    Remember: Do not sign anything unless you understand what it means.<br>
+                </p>
+            </div>
+            <button class="accordion">I want to extend my lease agreement.</button>
+            <div class="panel">
+                <button class="accordion1">Short fixed-term lease agreement. (a set period, up to five years) </button>
+                <div class="panel1">
+                    <p>
+                        If landlord do not give notice to end a Short fixed-term agreement, you will automatically roll over to a periodic tenancy agreement at the end of the Short-fixed term. No need to sign a new lease
+                        agreement but you may risk the security of your tenancy. It is recommended to sign for new lease agreement using form 1. Tenancy agreement forms are available from
+                        <a href="https://www.consumer.vic.gov.au/forms">https://www.consumer.vic.gov.au/forms</a>
+                    <p>
+
+                </div>
+                <button class="accordion1">Long fixed-term lease agreement. (a set period, more than 5 years)</button>
+                <div class="panel1">
+                    <p>
+                        If landlord do not give notice to end a Long fixed-term agreement, you will automatically roll over to a periodic tenancy agreement at the end of the Long-fixed term. No need to sign a new lease
+                        agreement but you may risk the security of your tenancy. It is recommended to sign for new lease agreement using form 1. Tenancy agreement forms are available from
+                        <a href="https://www.consumer.vic.gov.au/forms">https://www.consumer.vic.gov.au/forms</a>
+                    </p>
+
+                </div>
+                <button class="accordion1">Periodic lease agreement. (month by month, has no end date)</button>
+                <div class="panel1">
+                    <p>
+                        If landlord do not give notice to end a periodic lease agreement, you will automatically roll over to a periodic tenancy agreement at the end of the periodic lease agreement. No need to sign a new
+                        lease agreement but you may risk the security of your tenancy. Periodic leases can be written or verbal; however, it is suggested use Form 1 to sign for new lease agreement. Tenancy agreement
+                        <a href="https://www.consumer.vic.gov.au/forms">https://www.consumer.vic.gov.au/forms</a>
+                    </p>
+
+                </div>
+            </div>
+
+
+
+
+            <button class="accordion">I want to leave the property before ending of the tenancy agreement.</button>
+            <div class="panel">
+                <button class="accordion1">Short fixed-term lease agreement. (a set period, up to five years) </button>
+                <div class="panel1">
+                    <button class="accordion2">I don’t know how to proceed written notice to the landlord to leave the property before ending the lease agreement period </button>
+                    <div class="panel2">
+                        <p>
+                            If you have a Short fixed-term agreement but need to end your lease early, you should give written 28 days’ notice as soon as possible that you are leaving. Breaking a tenancy agreement may
+                            require you to pay compensation to your landlord. If you have confliction with landlord or agency regarding compensation payment, then it is suggested to ask for help from Tenants Victoria.
+                            Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+                        </p>
+                    </div>
+                    <button class="accordion2"> I have sent a written notice to leave the property before ending the lease agreement period.(a set period, up to five years) </button>
+                    <div class="panel2">
+                        <p>
+                            Breaking a Short fixed-term lease tenancy agreement may require you to pay compensation to your landlord or agency. If you have confliction with landlord or agency regarding compensation
+                            payment, then it is suggested to ask for help from Tenants Victoria. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1">Long fixed-term lease agreement. (a set period, more than 5 years)</button>
+                <div class="panel1">
+                    <button class="accordion2">I don’t know how to proceed written notice to the landlord to leave the property before ending the lease agreement period </button>
+                    <div class="panel2">
+                        <p>
+                            If you have a Long fixed-term agreement but need to end your lease early, you should give written 28 days’ notice as soon as possible that you are leaving. Breaking a tenancy agreement may
+                            require you to pay compensation to your landlord. If you have confliction with landlord or agency regarding compensation payment, then it is suggested to ask for help from Tenants Victoria.
+                            Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+
+                        </p>
+                    </div>
+                    <button class="accordion2"> I have sent a written notice to leave the property before ending the lease agreement period.(a set period, up to five years) </button>
+                    <div class="panel2">
+                        <p>
+                            Breaking a long fixed-term lease tenancy agreement may require you to pay compensation to your landlord or agency. If you have confliction with landlord or agency regarding compensation
+                            payment, then it is suggested to ask for help from Tenants Victoria. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1">Periodic lease agreement. (month by month, has no end date)</button>
+                <div class="panel1">
+                    <button class="accordion2">I don’t know how to proceed written notice to the landlord to leave the property before ending the lease agreement period </button>
+                    <div class="panel2">
+                        <p>
+                            If you have a periodic rental agreement but need to end your lease early, you should give written or verbal 14 days’ notice as soon as possible that you are leaving. Breaking a tenancy
+                            agreement may require you to pay compensation to your landlord. If you have confliction with landlord or agency regarding compensation payment, then it is suggested to ask for help from
+                            Tenants Victoria. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+
+                        </p>
+                    </div>
+                    <button class="accordion2"> I have sent a written notice to leave the property before ending the lease agreement period.(a set period, up to five years) </button>
+                    <div class="panel2">
+                        <p>
+                            Breaking a periodic tenancy agreement may require you to pay compensation to your landlord or agency. If you have confliction with landlord or agency regarding compensation
+                            payment, then it is suggested to ask for help from Tenants Victoria. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Remember: In cases of severe hardship, you can apply directly to VCAT to reduce the fixed-term tenancy.
+
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="accordion"> Landlord or Agency want me to leave the property before ending of the tenancy agreement.</button>
+            <div class="panel">
+                <button class="accordion1">Damage is maliciously caused to the premises or common areas by you or your visitor.</button>
+                <div class="panel1">
+                    <p>
+                        If damage is maliciously caused to the premises or common areas by you or your visitor, then landlord or agency may practice their legal rights by breaking rental agreement and sending
+                        you “immediate vacate notice”. You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given as breach
+                        of rental agreement. It is suggested to ask for help from Tenants Victoria. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                    </p>
+                </div>
+                <button class="accordion1">You or your visitor put neighbors in danger.</button>
+                <div class="panel1">
+                    <p>
+                        If you damage the property totally or partly that makes the property unsafe or unfit to live in, then landlord or agency may practice their legal rights by breaking rental agreement and sending
+                        you “immediate vacate notice”. You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given as breach
+                        of rental agreement. It is suggested to ask for help from Tenants Victoria. <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                    </p>
+                </div>
+                <button class="accordion1">
+                    If the premises are:<br>
+                    •Totally destroyed<br>
+                    • Partly destroyed and unsafe<br>
+                    • Unfit to live in.
+                </button>
+                <div class="panel1">
+                    <p>
+                        If you or your visitor put neighbors in danger, then landlord or agency may practice their legal rights by breaking rental agreement and sending you “immediate vacate notice”. You have the right
+                        to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given as breach of rental agreement. It is suggested to ask for help
+                        from Tenants Victoria, Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                    </p>
+                </div>
+                <button class="accordion1"> The premises are being used for illegal purposes.</button>
+                <div class="panel1">
+                    <button class="accordion2">  Periodic lease agreement. (month by month, has no end date)</button>
+                    <div class="panel2">
+                        <p>
+                            If you used the property for illegal purpose, then landlord or agency may practice their legal rights by breaking rental agreement and sending you “14 days vacate notice”. You
+                            have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given as breach of rental agreement.
+                            It is suggested to ask for help from Tenants Victoria, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                    <button class="accordion2">fixed-term lease agreement. (a set period, up to five years)</button>
+                    <div class="panel2">
+                        <p>
+                            If you used the property for illegal purpose, then landlord or agency may practice their legal rights by breaking rental agreement and sending you “14 days vacate notice”. You
+                            have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given as breach of rental agreement.
+                            It is suggested to ask for help from Tenants Victoria, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1"> Other tenants sub-let from you without the landlord’s consent.</button>
+                <div class="panel1">
+                    <button class="accordion2">  Periodic lease agreement. (month by month, has no end date)tenancy agreement.</button>
+                    <div class="panel2">
+                        <p>
+                            If other tenants sub-let from you without the landlord’s or agency’s consent, then landlord or agency may practice their legal rights by breaking rental agreement and sending
+                            you “14 days vacate notice”. You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason
+                            given as breach of rental agreement. If you wish to do so then, it is suggested to ask for help from Tenants Victoria Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                    <button class="accordion2"> fixed-term lease agreement. (a set period, up to five years)</button>
+                    <div class="panel2">
+                        <p>
+                            If other tenants sub-let from you without the landlord’s or agency’s consent, then landlord or agency may practice their legal rights by breaking rental agreement and sending
+                            you “14 days vacate notice”. You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason
+                            given as breach of rental agreement. Call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1"> Landlord or agency didn’t let you know the reason.</button>
+                <div class="panel1">
+                    <p>
+                        You can challenge for not to break the rental agreement and ‘Notice to Vacate’ given for no specified reason or to end a fixed-term tenancy, if you believe it was given because you were exercising
+                        your legal rights or saying you would do so. If you wish to do so, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                        Remember: A landlord or agent cannot personally use force to remove you from the property. Only the police may carry out an eviction, and only when they are acting on a Warrant for
+                        Possession.
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <button class="accordion">I have problem with verbal short-term lease agreement.</button>
+            <div class="panel">
+                <p>Short-term leases can be written or verbal; however, it is recommended to use written document to secure your tenancy agreement. Any kinds of problem regarding verbal agreement, It is suggested to ask for help from Tenants Victoria, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a></p>
+            </div>
+        </div>
+
+
+        <div id="Questionnaire1" style="margin-top:100px"></div>
+        <section class="cards">
+            <article class="card card--4">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire1" onclick="display(4)" class="card_link">
+                    <div class="card__img--hover"></div>
+                
+                <div class="card__info">
+                    <span class="card__category">Bond<br> Amount</span>
+                    <h3 class="card__title"></h3>
+
+                </div>
+                </a>
+            </article>
+
+            <article class="card card--5">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire1" onclick="display(5)" class="card_link">
+                    <div class="card__img--hover"></div>
+                
+                <div class="card__info">
+                    <span class="card__category">Repairs<br> and Expenses</span>
+                    <h3 class="card__title"></h3>
+                
+                </div>
+                    </a>
+            </article>
+
+            <article class="card card--6">
+
+                <div class="card__img"></div>
+                <a href="#Questionnaire1" onclick="display(6)" class="card_link">
+                    <div class="card__img--hover"></div>
+
+                    <div class="card__info">
+                        <span class="card__category "> Vacant<br> Notice</span>
+                        <h3 class="card__title"></h3>
+
+                    </div>
+                </a>
+            </article>
+        </section>
+        <div class="demo" style="width:80%;margin-left:10%">
+            <button class="accordion">I think the bond money is higher than usual or don’t know how to calculate it.</button>
+            <div class="panel">
+                <p>You can click <a href="http://tenancytrip.tk/Home/Check">here</a> and calculate your bond.</p>
+            </div>
+            <button class="accordion">I have paid the bond money to landlord or agency, but receipt is not provided.</button>
+            <div class="panel">
+                <button class="accordion1"> Your provided money is mention on rental agreement as Rent in advance</button>
+                <div class="panel1">
+                    <button class="accordion2">You are paying my rent weekly</button>
+                    <div class="panel2">
+                        <p>
+                            Landlord or Agency can ask maximum 14 day’s rent in advance and must give you a proper document as the evidence of receiving money if you pay in cash. If you paid the money
+                            Landlord or agency bank account then, transaction record can be used for the evidence of payment. In any other case, it is suggested to ask for help from Tenants Victoria,
+                            call 03 9416 2577 or reach them at  <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                    <button class="accordion2">You are paying my rent monthly</button>
+                    <div class="panel2">
+                        <p>
+                            If the rent is $350 or less, landlord or agency can ask maximum one month’s rent in advance and must give you a proper document as the evidence of receiving money if you pay in
+                            cash. If you paid the money Landlord’s or agency’s bank account then, transaction record can be used for the evidence of payment. In any other case, it is suggested to ask for help
+                            from Tenants Victoria, call 03 9416 2577 or reach them at  <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1">Your provided money is mention on rental agreement as Bond Money</button>
+                <div class="panel1">
+                    <p>
+                        1. If they lodge the bond using an ‘Electronic Transaction’ via RTBA Online, you will get an email with a link to a secure website where you can accept, request changes to, or reject the
+                        transaction. Once you accept the transaction, the bond is lodged and the RTBA will email you a receipt and ID number.<br>
+                        2. If they lodge the bond on a paper form, they must give you a completed and signed official ‘Bond Lodgment’ form to sign. The RTBA will send you a receipt. Contact the RTBA if you have
+                        not received a receipt 15 business days after paying your bond. Phone 1300 137 164 or email them at rtba@justice.vic.gov.au or reach them at <a href="https://www.consumer.vic.gov.au/bondauthority">www.rtba.vic.gov.au</a><br>
+
+                    </p>
+                </div>
+            </div>
+
+
+
+
+
+            <button class="accordion">I have paid the bond money to landlord, but it is not mentioned on the lease agreement.</button>
+            <div class="panel">
+                <button class="accordion1">You are in Short-term Lease (Less than 5 years).</button>
+                <div class="panel1">
+                    <p>
+                        Short-term leases can be written or verbal, however, it is recommended to use written leases using Form 1 - Residential tenancy agreement. If your landlord or agency use any other
+                        form of written lease agreement it must reflects the amount of rent and how it is to be paid and the amount of bond required. If it is not mentioned on lease agreement, ask about this
+                        to landlord or agency. If it is required to go for further help then seek help from Tenants Victoria, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                    </p>
+                </div>
+                <button class="accordion1">You are in Long-term Lease (More than 5 years).</button>
+                <div class="panel1">
+                    <p>
+                        . Long-term leases must be in writing, using either form 1 or form 2. Written leases must accurately reflect the wording of these official forms with lease outlines:<br>
+                        •	The amount of rent and how it is to be paid<br>
+                        •	The length and type of tenancy<br>
+                        •	The amount of bond required<br>
+                        •	Other conditions and rules<br>
+                        •	Any special terms agreed by the parties.<br>
+                        If it is not mentioned on lease agreement provided to you, ask about these to landlord or agency. If it is required to go for further help then seek help from Tenants Victoria,<br>
+                        call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                    </p>
+                </div>
+            </div>
+            <button class="accordion">Landlord is not returning my bond money back at end of lease agreement.</button>
+            <div class="panel">
+                <button class="accordion1">I have paid the money as Rent in advance</button>
+                <div class="panel1">
+                    <button class="accordion2">Landlord raised an issue regarding payment.</button>
+                    <div class="panel2">
+                        <p>
+                            Your landlord or agent may make a claim on part or all of the rent in advance money for:<br>
+                            • Damage caused by you or your visitors<br>
+                            • Cleaning expenses<br>
+                            • Abandonment of the premises<br>
+                            • You leaving your landlord to pay bills you should have paid.<br>
+                            • Loss of the landlord’s goods<br>
+                            • Unpaid rent.<br>
+                            The landlord must accept fair wear and tear. If there is disagreement about the payment issue raised by landlord or agency, you can discuss with them to resolve or you can ask
+                            help from Tenants Victoria, call 03 9416 2577 or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a>
+
+                        </p>
+                    </div>
+                    <button class="accordion2">I don’t have any due payment issue.</button>
+                    <div class="panel2">
+                        <p>
+                            At the end of a tenancy, landlord or agent should return rent in advance money if landlord or agency does not have any payment due with you regarding:<br>
+                            • Damage caused by you or your visitors<br>
+                            • Cleaning expenses<br>
+                            • Abandonment of the premises<br>
+                            • You leaving your landlord to pay bills you should have paid.<br>
+                            • Loss of the landlord’s goods<br>
+                            • Unpaid rent.<br>
+                            The landlord must accept fair wear and tear. If you believe that you don’t have any issue and landlord is deducting your partial or full rent in advance money which is unacceptable
+                            for you, you should ask help from Tenants Victoria, call 03 9416 2577 or reach them at<a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a>
+                        </p>
+                    </div>
+                </div>
+                <button class="accordion1">I have paid the money as Bond Money</button>
+                <div class="panel1">
+                    <button class="accordion2">Landlord raised an issue regarding payment.</button>
+                    <div class="panel2">
+                        <p>
+                            Your landlord or agent may make a claim on part or all of bond money for:<br>
+                            • Damage caused by you or your visitors<br>
+                            • Cleaning expenses<br>
+                            • Abandonment of the premises<br>
+                            • You leaving your landlord to pay bills you should have paid.<br>
+                            • Loss of the landlord’s goods<br>
+                            • Unpaid rent.<br>
+                            The landlord must accept fair wear and tear. If there is disagreement about the division of the bond, your landlord must apply to VCAT to have the matter resolved within 10
+                            business days of you vacating the premises. You may also apply to VCAT on the same grounds at any time. It is suggested to ask help from VCAT, call 1300 01 8228 or email them at
+                            renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Once VCAT has made an order, you and your landlord or agent must complete a ‘Bond Claim’ form and mail it to the RTBA with a copy of the order<br>
+
+                            NB: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential
+                            Tenancies Act 1997.<br>
+                            Residential Tenancies Bond Authority (RTBA) holds all residential tenancy bonds. It can only repay bonds if all parties to a bond agree, or as directed by VCAT or a court.
+
+                        </p>
+                    </div>
+                    <button class="accordion2">I don’t have any due payment issue.</button>
+                    <div class="panel2">
+                        <p>
+                            At the end of a tenancy, landlord or agent should set out the agreed division in a ‘Bond Claim’ form, signed (paper form) or accepted (online) by both parties, which is sent to the
+                            Residential Tenancies Bond Authority (RTBA) if landlord or agency does not have any payment due with you regarding:<br>
+                            • Damage caused by you or your visitors<br>
+                            • Cleaning expenses<br>
+                            • Abandonment of the premises<br>
+                            • You leaving your landlord to pay bills you should have paid.<br>
+                            • Loss of the landlord’s goods<br>
+                            • Unpaid rent.<br>
+                            The landlord must accept fair wear and tear. If there is disagreement about the division of the bond, your landlord must apply to VCAT to have the matter resolved within 10
+                            business days of you vacating the premises. You may also apply to VCAT on the same grounds at any time. It is suggested to ask help from VCAT, call 1300 01 8228 or email them at
+                            renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                            Once VCAT has made an order, you and your landlord or agent must complete a ‘Bond Claim’ form and mail it to the RTBA with a copy of the order<br>
+
+                            NB: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential
+                            Tenancies Act 1997.<br>
+                            Residential Tenancies Bond Authority (RTBA) holds all residential tenancy bonds. It can only repay bonds if all parties to a bond agree, or as directed by VCAT or a court.<br>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="demo" style="width:80%;margin-left:10%; ">
+            <button class="accordion">An urgent repair needs to be done but not getting landlord or agency response to fix it.</button>
+            <div class="panel">
+                <button class="accordion1">I have sent a repair request to the landlord or agency in writing.</button>
+                <div class="panel1">
+                    <p>
+
+                        You must keep copies of all letters, forms and reports for future reference. Landlord or agent must respond without delay for the given urgent repairs:<br>
+                        • A burst water service<br>
+                        • A blocked or broken toilet system<br>
+                        • A serious roof leak<br>
+                        • A gas leak<br>
+                        • A dangerous electrical fault<br>
+                        • Flooding or serious flood damage<br>
+                        • Serious storm or fire damage<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering<br>
+                        • Failure or breakdown of the gas, electricity, or water supply<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted<br>
+                        • A serious fault in a lift or staircase.<br>
+
+                        If a repair is urgent and you are not getting a prompt response from your landlord or agent, you can authorize the repair for up to $1,800. You can then give your landlord or agent a notice asking that they pay you back for the cost of the urgent repairs. Your landlord or agent has 14 days to pay from the date they receive the notice.
+                        Non-urgent repairs and other services should be maintained as per lease agreement terms and conditions that provided by the landlord or agency at the starting of tenancy.<br>
+                        Remember:<br>
+                        You can apply to VCAT, which will hear the application within two business days. VCAT can order the landlord or agent to arrange the repairs. It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.
+                    </p>
+                </div>
+                <button class="accordion1"> I have called to the landlord or agent using the emergency telephone number they provided at the start of the tenancy.</button>
+                <div class="panel1">
+                    <p>
+
+                        You should make repair requests in writing (Documents, email, text message etc.) and keep copies of all letters, forms and reports for future reference. The landlord or agent must respond without delay for the given urgent repairs:<br>
+                        • A burst water service<br>
+                        • A blocked or broken toilet system<br>
+                        • A serious roof leak<br>
+                        • A gas leak<br>
+                        • A dangerous electrical fault<br>
+                        • Flooding or serious flood damage<br>
+                        • Serious storm or fire damage<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering<br>
+                        • Failure or breakdown of the gas, electricity, or water supply<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted<br>
+                        • A serious fault in a lift or staircase.<br>
+
+                        If a repair is urgent and you are not getting a prompt response from your landlord or agent, you can authorize the repair for up to $1,800. You can then give your landlord or agent a notice asking that they pay you back for the cost of the urgent repairs. Your landlord or agent has 14 days to pay from the date they receive the notice.
+                        Non-urgent repairs and other services should be maintained as per lease agreement terms and conditions that provided by the landlord or agency at the starting of tenancy.<br>
+                        Remember:<br>
+                        You can apply to VCAT, which will hear the application within two business days. VCAT can order the landlord or agent to arrange the repairs. It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.
+                    </p>
+                </div>
+            </div>
+
+
+
+
+            <button class="accordion">I have a repair issue but don’t know who is responsible to pay for this.</button>
+            <div class="panel">
+                <button class="accordion1">I have a written lease agreement.</button>
+                <div class="panel1">
+                    <p>
+                        Your landlord or agent must undertake the responsibility of given urgent repairs and expenses.<br>
+                        • A burst water services.<br>
+                        • A blocked or broken toilet system<br>
+                        • A serious roof leaks.<br>
+                        • A gas leaks.<br>
+                        • A dangerous electrical fault.<br>
+                        • Flooding or serious flood damage.<br>
+                        • Serious storm or fire damage.<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering.<br>
+                        • Failure or breakdown of the gas, electricity, or water supply.<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure.<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted.<br>
+                        • A serious fault in a lift or staircase.<br>
+                        Non-urgent repairs and other services should be maintained as per lease agreement terms and conditions that provided by the landlord or agency at the starting of tenancy.It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.
+                    </p>
+                </div>
+                <button class="accordion1">I am on verbal lease agreement. </button>
+                <div class="panel1">
+                    <p>
+                        Your landlord or agent must undertake the responsibility of given urgent repairs and expenses.<br>
+                        • A burst water services.<br>
+                        • A blocked or broken toilet system<br>
+                        • A serious roof leaks.<br>
+                        • A gas leaks.<br>
+                        • A dangerous electrical fault.<br>
+                        • Flooding or serious flood damage.<br>
+                        • Serious storm or fire damage.<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering.<br>
+                        • Failure or breakdown of the gas, electricity, or water supply.<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure.<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted.<br>
+                        • A serious fault in a lift or staircase.<br>
+                        Non-urgent repairs and other services should be maintained as per verbal lease agreement terms and conditions that is promised by the landlord or agency at the starting of tenancy. It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.
+                    </p>
+                </div>
+            </div>
+
+            <button class="accordion">I have paid a repairs expense, but landlord or agency is not agreeing to pay me back.</button>
+            <div class="panel">
+                <button class="accordion1">I have a written lease agreement.</button>
+                <div class="panel1">
+                    <p>
+                        Your landlord or agent must undertake the responsibility of given urgent repairs and expenses.<br>
+                        • A burst water services.<br>
+                        • A blocked or broken toilet system.<br>
+                        • A serious roof leaks.<br>
+                        • A gas leaks.<br>
+                        • A dangerous electrical fault.<br>
+                        • Flooding or serious flood damage.<br>
+                        • Serious storm or fire damage.<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering.<br>
+                        • Failure or breakdown of the gas, electricity, or water supply.<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure.<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted.<br>
+                        • A serious fault in a lift or staircase.<br>
+                        If a repair is urgent and you are not getting a prompt response from your landlord or agent, you can authorize the repair for up to $1,800. You can then give your landlord or agent a notice asking that they pay you back for the cost of the urgent repairs. Your landlord or agent has 14 days to pay from the date they receive the notice.
+                        Non-urgent repairs and other services should be maintained as per lease agreement terms and conditions that provided by the landlord or agency at the starting of tenancy.<br>
+
+                        Remember:<br>
+                        You can apply to VCAT, which will hear the application within two business days. VCAT can order the landlord or agent to arrange the repairs. It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.<br>
+                    </p>
+                </div>
+                <button class="accordion1">I am on verbal lease agreement.</button>
+                <div class="panel1">
+                    <p>
+                        Your landlord or agent must undertake the responsibility of given urgent repairs and expenses.<br>
+                        • A burst water services.<br>
+                        • A blocked or broken toilet system.<br>
+                        • A serious roof leaks.<br>
+                        • A gas leaks.<br>
+                        • A dangerous electrical fault.<br>
+                        • Flooding or serious flood damage.<br>
+                        • Serious storm or fire damage.<br>
+                        • A failure or breakdown of any essential service or appliance provided by your landlord or agent for hot water, water, cooking, heating, or laundering.<br>
+                        • Failure or breakdown of the gas, electricity, or water supply.<br>
+                        • Any fault or damage in the premises that makes the premises unsafe or insecure.<br>
+                        • An appliance, fitting or fixture that is not working properly and causes a substantial amount of water to be wasted.<br>
+                        • A serious fault in a lift or staircase.<br>
+                        Non-urgent repairs and other services expense should be maintained as per verbal lease agreement terms and conditions that is promised by the landlord or agency at the starting of tenancy. It is suggested to ask help from VCAT if necessary, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential Tenancies Act 1997.<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="demo" style="width:80%;margin-left:10%; ">
+            <button class="accordion">I want to challenge against the vacant notice given by landlord or agency. </button>
+            <div class="panel">
+                <button class="accordion1">You are in Short-term Lease (Less than 5 years).</button>
+                <div class="panel1">
+                    <p>
+                        You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given. You can also challenge a ‘Notice to
+                        Vacate’ given for no specified reason or to end a fixed-term tenancy, if you believe it was given because you were exercising your legal rights or saying you would do so.<br>
+                        You must apply to VCAT to challenge a notice within specific timeframes depending on the reason and the minimum time period of the notice.<br>
+
+                        You must apply to VCAT within:<br>
+                        • 60 days of receiving a 120-day ‘no specified reason’ notice.<br>
+                        • 28 days of receiving a 90-day ‘end of fixed term’ notice.<br>
+                        • 21 days of receiving a 60-day ‘end of fixed-term’ notice.<br>
+                        It is suggested to ask help from VCAT for further information, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+
+                    </p>
+                </div>
+                <button class="accordion1">You are in Periodic lease (Month to month). </button>
+                <div class="panel1">
+                    <p>
+                        You have the right to challenge a ‘Notice to Vacate’. You may argue against the notice if it is not given properly or if you disagree with the reason given. You can also challenge a ‘Notice to
+                        Vacate’ given for no specified reason or to end a fixed-term tenancy, if you believe it was given because you were exercising your legal rights or saying you would do so.<br>
+                        You must apply to VCAT to challenge a notice within specific timeframes depending on the reason and the minimum time period of the notice.<br>
+                        In your case, you must apply to VCAT within 21 days of receiving a 60-day ‘end of fixed-term’ notice.<br>
+                        It is suggested to ask help from VCAT for further information, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a><br>
+
+                        Note: Victorian Civil and Administrative Tribunal (VCAT) operates like a court but is not as formal, and deals with a wide range of issues, including disputes arising from the Residential
+                        Tenancies Act 1997.
+
+
+                    </p>
+                </div>
+            </div>
+
+
+            <button class="accordion">I want to extend vacant notice period given by landlord or agency.</button>
+            <div class="panel">
+                <p>
+                    . If you have been served with a ‘Notice to Vacate’ but are finding it difficult to move out of the property on time, you may try to negotiate a solution with your landlord. It is suggested to ask help
+                    from VCAT for further information, call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a>
+                </p>
+            </div>
+
+
+            <button class="accordion">I need help to give vacant notice to the landlord.</button>
+            <div class="panel">
+                <button class="accordion1">You are in Short-term Lease (Less than 5 years).</button>
+                <div class="panel1">
+                    <p>
+                        You have rights Immediate notice to the landlord or agency If the premises are:<br>
+                        • Destroyed<br>
+                        • Partly destroyed and unsafe<br>
+                        • Unfit to live in.<br>
+                        or you have right to 14 days’ notice to the landlord or agency If You have already given two ‘Breach of Duty’ notices to the landlord and the breach has re-occurred.<br>
+                        or you can send 28 days’ notice for any other reason but may be subject to fees if it is before the end date of the agreement.<br>
+                        You must send a ‘Notice to Vacate’ in the correct written form and ensure that your notice is delivered within a suitable time. It is suggested to ask help from VCAT for further information,<br>
+                        call 1300 01 8228 or email them at renting@vcat.vic.gov.au or reach them at <a href="https://www.vcat.vic.gov.au/">www.vcat.vic.gov.au.</a>
+
+                    </p>
+                </div>
+                <button class="accordion1">You are in Periodic lease (Month to month).</button>
+                <div class="panel1">
+                    <p>
+                        . You have rights Immediate notice to the landlord or agency If the premises are:<br>
+                        • Destroyed<br>
+                        • Partly destroyed and unsafe<br>
+                        • Unfit to live in.<br>
+                        or you have right to 14 days’ notice to the landlord or agency If You have already given two ‘Breach of Duty’ notices to the landlord and the breach has re-occurred.<br>
+                        or you can send 28 days’ notice for any other reason as you are on periodic lease (Month to month).<br>
+                        You must send a ‘Notice to Vacate’ in the correct written form and ensure that your notice is delivered within a suitable time.
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            var panels = document.getElementsByClassName("panel");
+            var demos = document.getElementsByClassName("demo");
+            var acc1 = document.getElementsByClassName("accordion1");
+            var panels1 = document.getElementsByClassName("panel1");
+            var acc2 = document.getElementsByClassName("accordion2");
+            var panels2 = document.getElementsByClassName("panel2");
+
+            for (i = 0; i < demos.length; i++) {
+                demos[i].style.display = "none";
+            }
+
+            function display(n) {
+                  var a = document.getElementsByClassName("card__info");
+                if (demos[n - 1].style.display == "block") {
+                    demos[n - 1].style.display = "none";
+                }
+                else {
+                    for (i = 0; i < demos.length; i++) {
+                        demos[i].style.display = "none";
+                    }
+
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].style.backgroundColor = "white";
+                    }
+                    demos[n - 1].style.display = "block";
+                }
+              
+                for (i = 0; i < a.length; i++) {
+                    a[i].style.backgroundColor = "white";
+
+                }
+                a[n - 1].style.backgroundColor = "#e0e0e0";
+                //a[n - 1].calssList.add("active_elem");
+            }
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    for (i = 0; i < acc.length; i++) {
+                        acc[i].style.backgroundColor = "white";
+                    }
+
+                    this.style.backgroundColor = "aliceblue";
+                    for (i = 0; i < panels.length; i++) {
+                        panels[i].style.maxHeight = null;
+                    }
+
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = "none";
+                    }
+                });
+            }
+
+            for (i = 0; i < acc1.length; i++) {
+                acc1[i].addEventListener("click", function () {
+                    for (i = 0; i < acc1.length; i++) {
+                        acc1[i].style.backgroundColor = "white";
+                    }
+
+
+
+                    this.style.backgroundColor = "aliceblue";
+                    for (i = 0; i < panels1.length; i++) {
+                        panels1[i].style.maxHeight = null;
+                    }
+
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = "none";
+
+                    }
+                });
+            }
+
+            for (i = 0; i < acc2.length; i++) {
+                acc2[i].addEventListener("click", function () {
+                    for (i = 0; i < acc2.length; i++) {
+                        acc2[i].style.backgroundColor = "white";
+                    }
+
+                    this.style.backgroundColor = "aliceblue";
+                    for (i = 0; i < panels2.length; i++) {
+                        panels2[i].style.maxHeight = null;
+                    }
+
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = "none";
+                    }
+                });
+            }
+
+
+
+
+
+        </script>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="py-5 bg-black" style="margin-top:100px">
+        <div class="container">
+            <p class="m-0 text-center text-white small" style="font-weight: 300;letter-spacing: 2px;">Copyright © Tenancy Trip 2019<br>Developed by SCRY</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+    <script src="~/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
